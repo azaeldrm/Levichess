@@ -16,7 +16,7 @@ class Piece:
 
 	def getPieceType(self):
 		return self.piecetype
-	
+
 	def HowMove(self,yf,xf):
 		return self.MoveType(yf,xf)
 

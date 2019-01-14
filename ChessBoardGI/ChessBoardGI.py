@@ -2,9 +2,9 @@ import pygame
 import time
 import os
 from config import config
-from Player import Player
+from MainFiles.Player import Player
 
-class chessGI:
+class ChessBoardGI:
 	"""description of class"""
 
 	def main():

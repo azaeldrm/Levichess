@@ -6,7 +6,7 @@ from PieceTypes.Pawn import Pawn
 from PieceTypes.Queen import Queen
 from PieceTypes.Rook import Rook
 from Leviosa.Decoder import Decoder
-from Piece import Piece
+from MainFiles.Piece import Piece
 from config import config
 
 

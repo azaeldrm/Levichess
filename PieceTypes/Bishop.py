@@ -1,5 +1,6 @@
-from Piece import Piece
-from MoveRules import MoveRules
+from MainFiles.Piece import Piece
+from MainFiles.MoveRules import MoveRules
+
 
 class Bishop(Piece):
 	"""description of class"""

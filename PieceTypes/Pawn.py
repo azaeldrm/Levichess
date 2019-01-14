@@ -1,5 +1,6 @@
-from Piece import Piece
-from MoveRules import MoveRules
+from MainFiles.Piece import Piece
+from MainFiles.MoveRules import MoveRules
+
 
 class Pawn(Piece):
 	"""description of class"""
@@ -27,7 +28,7 @@ class Pawn(Piece):
 		else:
 			return False
 
-	
+
 	def KillType(self,yf,xf):
 		yi, xi = self.Location
 		n = yf - yi

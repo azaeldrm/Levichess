@@ -1,4 +1,4 @@
-from ChessBoard import ChessBoard
+from MainFiles.ChessBoard import ChessBoard
 
 
 class ChessGame:
