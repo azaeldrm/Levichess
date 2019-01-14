@@ -1,1 +1,3 @@
-google-api-python-client
+pygame
+google.cloud.speech
+pyaudio

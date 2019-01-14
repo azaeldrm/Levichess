@@ -4,12 +4,12 @@ from Player import Player
 from time import sleep
 from Cemetery import Cemetery
 from SoundTracks.SoundTracks import SoundTracks
-from Leviosa.Listener import Listener as listen
+from Leviosa.Listener import Listener
 from config import config
 from Leviosa import PositionGenerator as gen
 
 
-class GameMain:
+class MainGame:
 
 	def init_players(choice):
 
@@ -34,37 +34,38 @@ class GameMain:
 
 		# Dialogue
 		print('\n'*60)
-		print('BOISE CHESS GAME (HARRY POTTER MOD)\n')
-		print('Version 2.01')
+		print('LEVICHESS\n')
+		print('Version 1')
 		print('='*200+'\n\n')
 		sleep(0.7)
-		print('Entering BOISE dimension!\n')
+		print('Prepare yourself! Wingardium Leviosa!\n')
 		sleep(0.7)
 		print('...\n')
 		sleep(0.7)
-		print('Before we start, CHOOSE YOUR LEGION!\n\nWould you control BLACK or WHITE pieces?')
+		# print('Before we start, CHOOSE YOUR LEGION!\n\nWould you control BLACK or WHITE pieces?')
 
 		while True:
-			choice = input().lower()
+			# choice = input().lower()
+			choice = 'white'
 			if choice == 'white':
-				GameMain.init_players(True)
+				MainGame.init_players(True)
 				break
 			elif choice == 'black':
-				GameMain.init_players(False)
+				MainGame.init_players(False)
 				break
 			else:
 				print('\nPlease, choose a valid color.')
 
 		SoundTracks.PlayThemeSong(SoundTracks.HarryPotter_Theme)
 
-		print('Gathering your Batallion\n')
+		print('Gathering troops...\n')
 		print('...')
 		sleep(0.7)
-		print('\nBatallion is Ready.\nJoining the Battle.\n')
+		print('\nTroops are ready.\nJoining the Battle.\n')
 		print('...')
 		sleep(0.7)
 
-		print('\nGood Luck, Wizard.')
+		print('\nGood Luck, Wizard. You\' need it!')
 		sleep(1.5)
 		print('\n'*60)
 
@@ -106,7 +107,7 @@ class GameMain:
 						# Commented out print function because we already have a graphic interface
 						#ChessBoard.print_board(config.game_board)
 						print('What is the next move, Wizard?')
-						sentence = listen(DURATION)
+						sentence = Listener.listen(DURATION)
 						print('\n'*60)
 
 						if (sentence is not '') and ('exit' not in sentence): # No.1

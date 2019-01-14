@@ -10,4 +10,4 @@ if __name__ == "__main__":
 	MainGame.init_game()
 	MainGame.init_boards()
 	Thread(target = chessGI.main).start()
-	Thread(target = GameMain.main).start()
+	Thread(target = MainGame.main).start()

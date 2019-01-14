@@ -1,17 +1,19 @@
 import pygame
 import os
 import sys
+from config import config
 
 
 class SoundTracks:
-	script_dir = os.path.dirname(__file__)
+
+	script_dir = config.root_path + '\\resources\\'
 
 	#Loading the path of musics
-	HarryPotter_Theme = os.path.join(script_dir, 'music/Harry Potter Theme Song.mp3')
-	EpicScore_PrepareForTheOnslaught = os.path.join(script_dir, 'music/Epic Score- Prepare For The Onslaught (2012 Epic Intense Action Hybrid Rock Orchestral Choir Battle).mp3')
+	HarryPotter_Theme = os.path.join(script_dir, 'music\\Harry Potter Theme Song.mp3')
+	EpicScore_PrepareForTheOnslaught = os.path.join(script_dir, 'music\\Epic Score- Prepare For The Onslaught (2012 Epic Intense Action Hybrid Rock Orchestral Choir Battle).mp3')
 
 	#Loading the path of Sounds
-	Woosh1 = os.path.join(script_dir, 'sounds/whoosh1.wav')
+	Woosh1 = os.path.join(script_dir, 'sounds\\whoosh1.wav')
 
 
 	def init_SoundTracks():

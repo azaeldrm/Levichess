@@ -15,7 +15,7 @@ class chessGI:
 		# Initialize variables
 		disp = pygame.display
 		font = pygame.font.SysFont(None, 35)
-		script_dir = os.path.dirname(__file__)
+		script_dir = config.root_path + '\\resources\\images\\'
 
 		tile1_c = (100,50,30)
 		tile2_c = (150,120,60)
@@ -151,4 +151,3 @@ class chessGI:
 
 		pygame.quit()
 		quit()
-
