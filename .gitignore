@@ -1,0 +1,5 @@
+*.pyc
+file.flac
+file.wav
+__pycache__/
+venv/ 
