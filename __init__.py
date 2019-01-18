@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 from threading import Thread
 from MainFiles.MainGame import MainGame
