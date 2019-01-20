@@ -46,7 +46,7 @@ class Cemetery:
 		print('\n')
 
 	def CheckEmptyLocation(WhichTeam,WhichLocation):
-		Where = globalval.game_cboard[WhichTeam][WhichLocation]
+		Where = config.game_cboard[WhichTeam][WhichLocation]
 		if Where.isValid == True: #Check if there is a piece in the especific location
 			return False	#If there is a Piece, then the plase if ocupied. Therefore return False
 		elif Where.isValid == False:
@@ -58,7 +58,7 @@ class Cemetery:
 		DeadPiece.isAlive = False
 		DeadPiece.Location = [False, False]
 		WhichTeam = DeadPiece.colorID
-		cboard = globalval.game_cboard
+		cboard = config.game_cboard
 		if (DeadPiece.pieceID == 0):
 			WhichLocation = 1
 			while WhichLocation < 9:

@@ -136,10 +136,10 @@ class MainGame:
 								#config.turnSwitch = True #This is not needed anymore, as config.turnSwitch returns a boolean.
 
 
-						elif 'exit' in sentence: # No. 2
+						elif ('exit' or 'quit') in sentence: # No. 2
 							print('Would you like to close the game?')
 							while True:
-								sentence = listen(DURATION/2)
+								sentence = Listener.listen(DURATION/2)
 								if 'yes' in sentence:
 									config.gameExit = True
 									PlayerTurn[i].ExitGame()
