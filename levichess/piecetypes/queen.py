@@ -1,5 +1,5 @@
-from MainFiles.Piece import Piece
-from MainFiles.MoveRules import MoveRules
+from levichess.mainfiles.piece import Piece
+from levichess.mainfiles.moverules import MoveRules
 
 
 class Queen(Piece):

@@ -1,8 +1,8 @@
 import pygame
 import time
 import os
-from config import config
-from MainFiles.Player import Player
+from levichess.resources.config import config
+from levichess.mainfiles.player import Player
 
 class ChessBoardGI:
 	"""description of class"""
@@ -15,7 +15,7 @@ class ChessBoardGI:
 		# Initialize variables
 		disp = pygame.display
 		font = pygame.font.SysFont(None, 35)
-		script_dir = config.root_path + '\\resources\\images\\'
+		script_dir = config.root_path + '\\images\\'
 
 		tile1_c = (100,50,30)
 		tile2_c = (150,120,60)

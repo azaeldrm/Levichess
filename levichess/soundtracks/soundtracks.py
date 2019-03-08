@@ -1,12 +1,12 @@
 import pygame
 import os
 import sys
-from config import config
+from levichess.resources.config import config
 
 
 class SoundTracks:
 
-	script_dir = config.root_path + '\\resources\\'
+	script_dir = config.root_path
 
 	#Loading the path of musics
 	HarryPotter_Theme = os.path.join(script_dir, 'music\\Harry Potter Theme Song.mp3')

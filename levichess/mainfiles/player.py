@@ -1,11 +1,11 @@
-from MainFiles.Piece import Piece
-from MainFiles.ChessBoard import ChessBoard
-from MainFiles.Cemetery import Cemetery
-from Leviosa.Decoder import Decoder
 from sys import exit
 from enum import Enum
-from SoundTracks.SoundTracks import SoundTracks
-from config import config
+from levichess.mainfiles.piece import Piece
+from levichess.mainfiles.chessboard import ChessBoard
+from levichess.mainfiles.cemetery import Cemetery
+from levichess.leviosa.decoder import Decoder
+from levichess.soundtracks.soundtracks import SoundTracks
+from levichess.resources.config import config
 
 
 class Player:

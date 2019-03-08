@@ -1,12 +1,12 @@
 from time import sleep
-from MainFiles.ChessBoard import ChessBoard
-from MainFiles.Piece import Piece
-from MainFiles.Player import Player
-from MainFiles.Cemetery import Cemetery
-from SoundTracks.SoundTracks import SoundTracks
-from Leviosa.Listener import Listener
-from config import config
-from Leviosa import PositionGenerator as gen
+from levichess.mainfiles.chessboard import ChessBoard
+from levichess.mainfiles.piece import Piece
+from levichess.mainfiles.player import Player
+from levichess.mainfiles.cemetery import Cemetery
+from levichess.soundtracks.soundtracks import SoundTracks
+from levichess.leviosa.listener import Listener
+from levichess.resources.config import config
+from levichess.leviosa import position_generator as gen
 
 
 class MainGame:

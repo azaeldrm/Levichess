@@ -1,11 +1,11 @@
 from google.cloud import speech
 import io
 import os
-from Leviosa import PositionGenerator as gen
-from config import config
+from levichess.leviosa import position_generator as gen
+from levichess.resources.config import config
 
 def googleMain():
-	os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "resources/keys/levichess_key.json"
+	os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "levichess/resources/keys/levichess_key.json"
 	speech_file = 'file.flac'
 	sentence = ''
 	syntax = config.syntaxArray

@@ -1,13 +1,13 @@
-from PieceTypes.Blank import Blank
-from PieceTypes.Bishop import Bishop
-from PieceTypes.King import King
-from PieceTypes.Knight import Knight
-from PieceTypes.Pawn import Pawn
-from PieceTypes.Queen import Queen
-from PieceTypes.Rook import Rook
-from Leviosa.Decoder import Decoder
-from MainFiles.Piece import Piece
-from config import config
+from levichess.piecetypes.blank import Blank
+from levichess.piecetypes.bishop import Bishop
+from levichess.piecetypes.king import King
+from levichess.piecetypes.knight import Knight
+from levichess.piecetypes.pawn import Pawn
+from levichess.piecetypes.queen import Queen
+from levichess.piecetypes.rook import Rook
+from levichess.leviosa.decoder import Decoder
+from levichess.mainfiles.piece import Piece
+from levichess.resources.config import config
 
 
 class ChessBoard:

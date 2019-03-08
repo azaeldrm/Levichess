@@ -1,7 +1,7 @@
-from PieceTypes.Blank import Blank
-from MainFiles.ChessBoard import ChessBoard
-from MainFiles.Piece import Piece
-from config import config
+from levichess.piecetypes.blank import Blank
+from levichess.mainfiles.chessboard import ChessBoard
+from levichess.mainfiles.piece import Piece
+from levichess.resources.config import config
 
 
 class Cemetery:

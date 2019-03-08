@@ -1,19 +1,17 @@
-from MainFiles.Piece import Piece
-from MainFiles.MoveRules import MoveRules
+from levichess.mainfiles.piece import Piece
+from levichess.mainfiles.moverules import MoveRules
 
 
-class Knight(Piece):
+class Bishop(Piece):
 	"""description of class"""
 	def __init__(self,colorID,numberID):
-		Piece.__init__(self,colorID,2)
-		self.piecetype = 'KNIGHT' + ' ' + str(numberID)
+		Piece.__init__(self,colorID,3)
+		self.piecetype = 'BISHOP' + ' ' + str(numberID)
 		self.numberID = numberID
 
 	def MoveType(self,yf,xf):
 		yi, xi = self.Location
-		ny = yf - yi
-		nx = xf - xi
-		if MoveRules.Lshape(yi, xi, yf, xf, ny, nx) == True:
+		if MoveRules.Diagonal(yi, xi, yf, xf, 0) == True:
 			return True
 		else:
 			return False

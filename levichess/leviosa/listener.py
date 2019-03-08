@@ -1,7 +1,7 @@
 import pyaudio
 import wave
 import subprocess
-from Leviosa import Interpreter_GoogleAPI as gAPI
+from levichess.leviosa import interpreter_googleapi as gAPI
 
 class Listener:
 

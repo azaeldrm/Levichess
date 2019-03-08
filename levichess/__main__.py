@@ -2,9 +2,9 @@
 
 import sys
 from threading import Thread
-from MainFiles.MainGame import MainGame
-from SoundTracks.SoundTracks import SoundTracks
-from ChessBoardGI.ChessBoardGI import ChessBoardGI
+from levichess.mainfiles.maingame import MainGame
+from levichess.soundtracks.soundtracks import SoundTracks
+from levichess.chessboardgi.chessboardgi import ChessBoardGI
 
 if __name__ == "__main__":
 

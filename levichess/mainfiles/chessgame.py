@@ -1,4 +1,4 @@
-from MainFiles.ChessBoard import ChessBoard
+from levichess.mainfiles.chessboard import ChessBoard
 
 
 class ChessGame:
