@@ -4,4 +4,4 @@ file.wav
 __pycache__/
 venv/
 notes.txt
-*.json
+levichess_key.json
