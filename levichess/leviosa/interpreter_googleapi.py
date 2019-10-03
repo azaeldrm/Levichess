@@ -5,7 +5,7 @@ from levichess.leviosa import position_generator as gen
 from levichess.resources.config import config
 
 def googleMain():
-	os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "levichess/resources/keys/levichess_key.json"
+	os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "levichess/resources/keys/GoogleAPIKey.json"
 	speech_file = 'file.flac'
 	sentence = ''
 	syntax = config.syntaxArray

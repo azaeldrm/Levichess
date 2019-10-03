@@ -4,4 +4,4 @@ file.wav
 __pycache__/
 venv/
 notes.txt
-levichess_key.json
+GoogleAPIKey.json
